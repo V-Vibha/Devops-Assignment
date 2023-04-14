@@ -4,18 +4,27 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                sh 'mvn clean install' // Execute Maven build
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                sh 'mvn test' // Execute Maven tests
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                sh 'mvn deploy' // Deploy to a Maven repository or any other deployment step
             }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline completed successfully!' // Print a success message
+        }
+        failure {
+            echo 'Pipeline failed. Please check the build logs.' // Print a failure message
         }
     }
 }
