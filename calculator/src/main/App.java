@@ -22,9 +22,15 @@ public final class App {
         String x =String.valueOf(eq.charAt(0));
         String y = String.valueOf(eq.charAt(2));
         char symb = eq.charAt(1);
-        int flag_var;
+        int flag_var=1;
         int res=0;
         System.out.println("x= "+x+" y= "+y);
+        if(res==1)
+            flag_var=1;
+        else if(res==2)
+            flag_var==2;
+        while(flag_var!=1)
+            System.out.println("Hello World");
         if(Character.isDigit(eq.charAt(0)) && Character.isDigit(eq.charAt(2)))
         {
         switch(symb)
