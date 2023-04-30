@@ -22,6 +22,7 @@ public final class App {
         String x =String.valueOf(eq.charAt(0));
         String y = String.valueOf(eq.charAt(2));
         char symb = eq.charAt(1);
+        int flag_var;
         int res=0;
         System.out.println("x= "+x+" y= "+y);
         if(Character.isDigit(eq.charAt(0)) && Character.isDigit(eq.charAt(2)))
@@ -49,6 +50,5 @@ public final class App {
     }
     else
     System.out.println("Invalid input");
-        sc.close();
     }
 }
