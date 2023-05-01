@@ -25,7 +25,7 @@ public final class App {
         int flag_var=1;
         if(symb=='+')
             System.out.println("+");
-        while(flag_var==1)
+        while(flag_var==1);
             System.out.println("Hello World");
         if(Character.isDigit(eq.charAt(0)) && Character.isDigit(eq.charAt(2)))
         {
@@ -44,7 +44,7 @@ public final class App {
                             System.out.println("Invalid value for y");
                             System.exit(2);
                         }
-                        break;
+//                         break;
             default : System.out.println("Invalid input");
                       System.exit(1);
         }
